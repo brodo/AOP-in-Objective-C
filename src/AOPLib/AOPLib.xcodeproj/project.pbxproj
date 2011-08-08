@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6EB474DC13F043D400597351 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB474DB13F043D400597351 /* Foundation.framework */; };
+		6EB474E213F043D400597351 /* AOPLibiPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB474E113F043D400597351 /* AOPLibiPhone.m */; };
 		89875D4B12DA46ED00D9CF7E /* AOPInterceptorInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 89875D4412DA46ED00D9CF7E /* AOPInterceptorInfo.m */; };
 		89875D4C12DA46ED00D9CF7E /* AOPMethodLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 89875D4612DA46ED00D9CF7E /* AOPMethodLogger.m */; };
 		89875D4D12DA46ED00D9CF7E /* AOPProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89875D4812DA46ED00D9CF7E /* AOPProxy.m */; };
@@ -34,6 +36,11 @@
 		08FB7796FE84155DC02AAC07 /* AOPLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOPLib.m; sourceTree = "<group>"; };
 		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32A70AAB03705E1F00C91783 /* AOPLib_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOPLib_Prefix.pch; sourceTree = "<group>"; };
+		6EB474D913F043D400597351 /* libAOPLibiPhone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAOPLibiPhone.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EB474DB13F043D400597351 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6EB474DF13F043D400597351 /* AOPLibiPhone-Prefix.pch */ = {isa = PBXFileReference; path = "AOPLibiPhone-Prefix.pch"; sourceTree = "<group>"; };
+		6EB474E013F043D400597351 /* AOPLibiPhone.h */ = {isa = PBXFileReference; path = AOPLibiPhone.h; sourceTree = "<group>"; };
+		6EB474E113F043D400597351 /* AOPLibiPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOPLibiPhone.m; sourceTree = "<group>"; };
 		89875D4312DA46ED00D9CF7E /* AOPInterceptorInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOPInterceptorInfo.h; sourceTree = "<group>"; };
 		89875D4412DA46ED00D9CF7E /* AOPInterceptorInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOPInterceptorInfo.m; sourceTree = "<group>"; };
 		89875D4512DA46ED00D9CF7E /* AOPMethodLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOPMethodLogger.h; sourceTree = "<group>"; };
@@ -49,6 +56,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6EB474D613F043D400597351 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EB474DC13F043D400597351 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DD76F9B0486AA7600D96B5E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,6 +81,8 @@
 				08FB7795FE84155DC02AAC07 /* Source */,
 				C6859EA2029092E104C91782 /* Documentation */,
 				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
+				6EB474DD13F043D400597351 /* AOPLibiPhone */,
+				6EB474DA13F043D400597351 /* Frameworks */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 			);
 			name = AOPLib;
@@ -95,8 +112,35 @@
 			isa = PBXGroup;
 			children = (
 				8DD76FA10486AA7600D96B5E /* AOPLib */,
+				6EB474D913F043D400597351 /* libAOPLibiPhone.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6EB474DA13F043D400597351 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EB474DB13F043D400597351 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EB474DD13F043D400597351 /* AOPLibiPhone */ = {
+			isa = PBXGroup;
+			children = (
+				6EB474E013F043D400597351 /* AOPLibiPhone.h */,
+				6EB474E113F043D400597351 /* AOPLibiPhone.m */,
+				6EB474DE13F043D400597351 /* Supporting Files */,
+			);
+			path = AOPLibiPhone;
+			sourceTree = "<group>";
+		};
+		6EB474DE13F043D400597351 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EB474DF13F043D400597351 /* AOPLibiPhone-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		89875D4212DA46ED00D9CF7E /* AOP */ = {
@@ -124,7 +168,34 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		6EB474D713F043D400597351 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		6EB474D813F043D400597351 /* AOPLibiPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EB474E513F043D400597351 /* Build configuration list for PBXNativeTarget "AOPLibiPhone" */;
+			buildPhases = (
+				6EB474D513F043D400597351 /* Sources */,
+				6EB474D613F043D400597351 /* Frameworks */,
+				6EB474D713F043D400597351 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AOPLibiPhone;
+			productName = AOPLibiPhone;
+			productReference = 6EB474D913F043D400597351 /* libAOPLibiPhone.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		8DD76F960486AA7600D96B5E /* AOPLib */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "AOPLib" */;
@@ -163,11 +234,20 @@
 			projectRoot = "";
 			targets = (
 				8DD76F960486AA7600D96B5E /* AOPLib */,
+				6EB474D813F043D400597351 /* AOPLibiPhone */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6EB474D513F043D400597351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EB474E213F043D400597351 /* AOPLibiPhone.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DD76F990486AA7600D96B5E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,6 +319,51 @@
 			};
 			name = Release;
 		};
+		6EB474E313F043D400597351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/AOPLibiPhone.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AOPLibiPhone/AOPLibiPhone-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6EB474E413F043D400597351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/AOPLibiPhone.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AOPLibiPhone/AOPLibiPhone-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -259,6 +384,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		6EB474E513F043D400597351 /* Build configuration list for PBXNativeTarget "AOPLibiPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EB474E313F043D400597351 /* Debug */,
+				6EB474E413F043D400597351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

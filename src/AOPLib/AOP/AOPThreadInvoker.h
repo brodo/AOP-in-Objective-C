@@ -6,7 +6,7 @@
 //  Copyright 2011 Innoli Kft. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 #import "AOPProxy.h"
 
 @interface AOPThreadInvoker : AOPProxy {
