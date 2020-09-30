@@ -33,6 +33,7 @@ For a simple example check this:
                                     interceptorSelector:@selector( removeInterceptor: )];
     
     [testArray addObject:[NSNumber numberWithInt:1]];
+    THANK YOU
     
     [testArray removeObjectAtIndex:0];
     
